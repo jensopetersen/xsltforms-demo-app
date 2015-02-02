@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:rte="http://www.agencexml.com/xsltforms/rte" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsltforms="http://www.agencexml.com/xsltforms">
-    <head>
-        <title>TinyMCE Support</title>
-        <style type="text/css">
+	<head>
+		<title>TinyMCE Support</title>
+		<style type="text/css">
 			.large-textarea textarea {
 				font-family: Courier, sans-serif;
 				height: 10em;
 				width: 500px;
 			}
 		</style>
-        <script type="text/javascript" src="../resources/scripts/tinymce_4.0.21/tinymce.min.js" data-uri="http://www.tinymce.com" data-version="4.0.21">/* */</script>
+		<script type="text/javascript" src="../resources/scripts/tinymce_4.1.7/tinymce.min.js" data-uri="http://www.tinymce.com" data-version="4.0.21">/* */</script>
 		<model xmlns="http://www.w3.org/2002/xforms">
 			<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.agencexml.com/xsltforms/rte">
 				<simpleType name="standardHTML">
@@ -17,12 +17,12 @@
 					<annotation>
 						<appinfo>
 							{
-								plugins: [
-									"advlist autolink lists link image charmap print preview anchor",
-									"searchreplace visualblocks code fullscreen",
-									"insertdatetime media table contextmenu paste"
-								],
-								toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+							plugins: [
+							"advlist autolink lists link image charmap print preview anchor",
+							"searchreplace visualblocks code fullscreen",
+							"insertdatetime media table contextmenu paste"
+							],
+							toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
 							}
 						</appinfo>
 					</annotation>
@@ -47,11 +47,15 @@
 		<table>
 			<tr>
 				<td>Raw resulting value: </td>
-				<td><output xmlns="http://www.w3.org/2002/xforms" value="richtext"/></td>
+				<td>
+					<output xmlns="http://www.w3.org/2002/xforms" value="richtext"/>
+				</td>
 			</tr>
 			<tr>
 				<td>HTML resulting value: </td>
-				<td><output xmlns="http://www.w3.org/2002/xforms" value="richtext" mediatype="application/xhtml+xml"/></td>
+				<td>
+					<output xmlns="http://www.w3.org/2002/xforms" value="richtext" mediatype="application/xhtml+xml"/>
+				</td>
 			</tr>
 		</table>
 	</body>
